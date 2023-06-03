@@ -28,6 +28,7 @@
 @import 'components/keyframes';
 @import "components/items";
 @import "components/rfs";
+@import "components/width";
 
 @import 'layout/navigation';
 @import 'layout/grid';
@@ -35,9 +36,10 @@
 @import 'layout/footer';
 @import 'layout/sidebar';
 @import 'layout/forms';
+@import 'layout/common';
 
 @import 'pages/home';
-@import 'pages/about';
+@import 'pages/selectroom';
 @import 'pages/contact';
 
 @import 'themes/theme';

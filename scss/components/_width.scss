@@ -1,0 +1,10 @@
+@mixin width($i){
+  max-width: 100%;
+  width: #{$i}px;
+}
+$j: 302,672;
+@each $i in $j {
+  .w#{$i}{
+    @include width($i);
+  }
+}

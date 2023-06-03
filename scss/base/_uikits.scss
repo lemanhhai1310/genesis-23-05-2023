@@ -1,4 +1,10 @@
 .uk{
+  &-container{
+    @include media-breakpoint-up('l'){
+      padding-left: 190px;
+      padding-right: 190px;
+    }
+  }
   &-height{
     &-min{
       &-small{

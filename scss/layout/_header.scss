@@ -1,0 +1,33 @@
+.header{
+  .uk-container{
+    @include media-breakpoint-up('l'){
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+  &__navItem{
+    min-height: 70px;
+    @include media-breakpoint-up('xl'){
+      min-height: 88px;
+    }
+  }
+  .uk-navbar-item{
+    @extend .header__navItem;
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        @extend .header__navItem;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: $font-primary;
+        text-transform: inherit;
+        color: #5C605E;
+        &:hover,
+        &.active{
+          color: #{$primary-color};
+        }
+      }
+    }
+  }
+}
